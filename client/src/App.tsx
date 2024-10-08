@@ -131,6 +131,10 @@ function App() {
     initializeTheme();
   },[checkAuthentication])
 
+  useEffect(() => {
+    alert('This website is under development, some functions might not work')
+  },[])
+
   if(isCheckingAuth) return <Loading/>
   return (
     <main>
